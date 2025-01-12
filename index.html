@@ -21,17 +21,28 @@
         <div class="civic container">
             <h2>Honda Civic IX</h2>
             <div class="civic-money">
-                <ul>
-                    <li>2679$ + 50€<br/><span>12.01.2025</span></li>
-                </ul>
+                <div>
+                    <ul>
+                        <li><price>2729</price>$<br/><span>01.12.2024</span></li>
+                        <li><price>50</price>$<br/><span>02.01.2025</span></li>
+                    </ul>
+                    <p id="civic-total-has-sum"></p>
+                </div>
+
+
                 <div class="civic-img">
                     <img src="img/honda_civic__578890956fx-removebg-preview.png" alt="civic"><br/>
-                    <span>10.000$</span>
+                    <p class="civic-price"><span id="civic-total">10.000</span>$</p>
                 </div>
             </div>
-
+            <div class="civic-calc">
+                <input type="number" placeholder="Every month, keep..." id="civic-calc" />
+                <button id="civic-calc-btn">Calc</button>
+                <p id="civic-calc-result">Calc Something...</p>
+            </div>
         </div>
 
     </main>
+<script src="js/calc.js"></script>
 </body>
 </html>

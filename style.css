@@ -7,6 +7,9 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+ul{
+    padding: 0;
+}
 ul li{
     list-style-type: none;
     font-size: 26px;
@@ -43,14 +46,79 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        #civic-total-has-sum{
+            font-size: 20px;
+            font-weight: 700;
+            border-bottom: 1px solid white;
+            letter-spacing: 1.5px;
+        }
     }
 
     .civic-img{
         text-align: center;
-        span{
+        span,.civic-price{
             color: darkgreen;
             font-weight: 700;
             font-size: 45px;
         }
     }
+    .civic-calc{
+        text-align: center;
+
+    }
+}
+#civic-calc {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#civic-calc:focus {
+    border-color: #000;
+    background-color: #fff;
+}
+
+#civic-calc-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#civic-calc-btn:hover {
+    background-color: #333;
+}
+
+#civic-calc-btn:active {
+    background-color: #555;
+}
+
+#civic-calc-result {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #444;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
